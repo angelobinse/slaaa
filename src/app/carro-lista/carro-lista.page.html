@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>carro-lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let carro of listaCarro | async ">
+      <ion-label>{{carro.marca}}</ion-label>
+      <ion-label>{{carro.modelo}}</ion-label>
+      <ion-label>{{carro.placa}}</ion-label>
+      <ion-label>{{carro.cor}}</ion-label>
+
+      </ion-item>
+  </ion-list>
+
+  <ion-button color="dark"href="tela">Voltar<ion-icon name="home"></ion-icon></ion-button>
+
+</ion-content>

@@ -20,9 +20,27 @@
 
     <ion-card-content>
 
+      <ion-item>
+        <ion-label position="floating">marca: </ion-label>
+        <ion-input type="text" [(ngModel)]="carro.marca" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+      </ion-item>
 
+      <ion-item>
+        <ion-label position="floating">modelo: </ion-label>
+        <ion-input type="text" [(ngModel)]="carro.modelo" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+      </ion-item>
 
-      <ion-button color="dark" href=""> Confirmar Cadastro<ion-icon name="checkmark-circle-outline"></ion-icon> </ion-button>
+      <ion-item>
+        <ion-label position="floating">placa: </ion-label>
+        <ion-input type="text" [(ngModel)]="carro.placa" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">cor: </ion-label>
+        <ion-input type="text" [(ngModel)]="carro.cor" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+      </ion-item>
+
+      <ion-button color="dark" (click)="salvar()"> Confirmar Cadastro<ion-icon name="checkmark-circle-outline"></ion-icon> </ion-button>
       <ion-button color="dark" href="tela"> Cancelar <ion-icon name="close-circle-outline"></ion-icon> </ion-button>
 
       </ion-card-content>

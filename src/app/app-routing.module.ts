@@ -9,7 +9,9 @@ const routes: Routes = [
   { path: 'caminhao', loadChildren: './caminhao/caminhao.module#CaminhaoPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' },
-  { path: 'tela', loadChildren: './tela/tela.module#TelaPageModule' },
+  { path: 'tela', loadChildren: './tela/tela.module#TelaPageModule' },  { path: 'pagina', loadChildren: './pagina/pagina.module#PaginaPageModule' },
+  { path: 'carro-lista', loadChildren: './carro-lista/carro-lista.module#CarroListaPageModule' },
+
 ];
 
 @NgModule({
