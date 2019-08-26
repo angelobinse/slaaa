@@ -21,6 +21,10 @@ export class CarroListaPage implements OnInit {
       })))
     )
    }
+   excluir(key){
+     this.fire.list('carro').remove(key);
+     alert("Excluido com sucesso");
+   }
 
   ngOnInit() {
   }

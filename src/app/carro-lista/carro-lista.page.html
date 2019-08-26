@@ -11,10 +11,13 @@
       <ion-label>{{carro.modelo}}</ion-label>
       <ion-label>{{carro.placa}}</ion-label>
       <ion-label>{{carro.cor}}</ion-label>
+      <ion-label>{{carro.Combustivel}}</ion-label>
+      <ion-button color="dark"href="" (click)="excluir(carro.key)">Excluir<ion-icon name="trash"></ion-icon></ion-button>
 
-      </ion-item>
+    </ion-item>
   </ion-list>
-
   <ion-button color="dark"href="tela">Voltar<ion-icon name="home"></ion-icon></ion-button>
+
+
 
 </ion-content>

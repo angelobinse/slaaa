@@ -21,4 +21,11 @@ logout() {
 this.afAuth.auth.signOut();
 this.router.navigate(['/']);
 }
+redefinir(){
+  alert("verifique seu email");
+  this.afAuth.auth.sendPasswordResetEmail(this.usuario.email).then(
+    () => alert ('verefique seu email'));
+    {this.router.navigate([]);}
+
+}
 }
