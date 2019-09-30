@@ -20,28 +20,28 @@
 
     <ion-card-content>
 
-      <ion-item>
+      <ion-item color='light'>
         <ion-label position="floating">marca: </ion-label>
-        <ion-input type="text" [(ngModel)]="carro.marca" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+        <ion-input type="text" [(ngModel)]="carro.marca" placeholder ="Informe a Marca do Carro" required> <ion-icon name="unlock"></ion-icon></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item color='light'>
         <ion-label position="floating">modelo: </ion-label>
-        <ion-input type="text" [(ngModel)]="carro.modelo" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+        <ion-input type="text" [(ngModel)]="carro.modelo" placeholder ="Informe a Modelo do Carro"required> <ion-icon name="unlock"></ion-icon></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item color='light'>
         <ion-label position="floating">placa: </ion-label>
-        <ion-input type="text" [(ngModel)]="carro.placa" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+        <ion-input type="text" [(ngModel)]="carro.placa" placeholder ="Informe a Placa do Carro"required> <ion-icon name="unlock"></ion-icon></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item color='light'>
         <ion-label position="floating">cor: </ion-label>
-        <ion-input type="text" [(ngModel)]="carro.cor" placeholder ="Informe a Marca do Carro"> <ion-icon name="unlock"></ion-icon></ion-input>
+        <ion-input type="text" [(ngModel)]="carro.cor" placeholder ="Informe a Cor do Carro"required> <ion-icon name="unlock"></ion-icon></ion-input>
       </ion-item>
 
-      <ion-item>
-      <ion-label>Tipo Combustivel</ion-label>
+      <ion-item color='light'>
+      <ion-label required>Tipo Combustivel</ion-label>
     <ion-select [(ngModel)]="carro.Combustivel"placeholder="Select One">
       <ion-select-option value="Gasolina">Gasolina</ion-select-option>
       <ion-select-option value="Alcool">Alcool</ion-select-option>
@@ -50,8 +50,8 @@
     </ion-select>
     </ion-item>
 
-      <ion-button color="dark" (click)="salvar()"> Confirmar Cadastro<ion-icon name="checkmark-circle-outline"></ion-icon> </ion-button>
-      <ion-button color="dark" href="tela"> Cancelar <ion-icon name="close-circle-outline"></ion-icon> </ion-button>
+      <ion-button expand='full'color="dark" (click)="salvar()"> Confirmar Cadastro<ion-icon name="checkmark-circle-outline"></ion-icon> </ion-button>
+      <ion-button expand='full'color="dark" href="tela"> Cancelar <ion-icon name="close-circle-outline"></ion-icon> </ion-button>
 
       </ion-card-content>
       </ion-card>
