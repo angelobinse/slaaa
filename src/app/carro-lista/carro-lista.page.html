@@ -12,7 +12,8 @@
       <ion-label>{{carro.placa}}</ion-label>
       <ion-label>{{carro.cor}}</ion-label>
       <ion-label>{{carro.Combustivel}}</ion-label>
-      <ion-button color="dark"href="" (click)="excluir(carro.key)">Excluir<ion-icon name="trash"></ion-icon></ion-button>
+      <ion-button color='dark'(click)="alterar(carro)"><ion-icon name="create"></ion-icon></ion-button>
+      <ion-button color="dark"href="" (click)="excluir(carro.key)"><ion-icon name="trash"></ion-icon></ion-button>
 
     </ion-item>
   </ion-list>

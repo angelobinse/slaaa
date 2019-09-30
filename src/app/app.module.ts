@@ -11,11 +11,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from  '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 
+import { CarroPageModule } from './carro/carro.module';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-  AngularFireDatabaseModule,
+  AngularFireDatabaseModule, CarroPageModule,
 AngularFireModule.initializeApp({
   apiKey: "AIzaSyCls3nL-mCjDwdku6Kl-BCPjvEVQlfPImE",
     authDomain: "cu-de-engole-pinto.firebaseapp.com",
